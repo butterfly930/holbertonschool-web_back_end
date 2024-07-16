@@ -8,4 +8,3 @@ export default function handleProfileSignup() {
     console.log ('Signup system offline');
   });
 }
-import { uploadPhoto, createUser } from './utils';
