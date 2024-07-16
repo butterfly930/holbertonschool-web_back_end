@@ -1,2 +1,3 @@
-import handleProfileSignup from "./3-all";
+import handleProfileSignup from './3-all';
+
 handleProfileSignup();
