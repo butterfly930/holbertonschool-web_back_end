@@ -1,28 +1,46 @@
-
 module.exports = {
-  root: true,
-  parser: 'babel-eslint',
-  parserOptions: {
-    sourceType: 'module'
-  },
   env: {
-    browser: true
+    browser: true,
+    es2021: true,
   },
-  globals: {
-    '__THEME': true,
-    'Velocity': true
-  },
-  // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
-  extends: 'standard',
-  // required to lint *.vue files
-  plugins: [
-    'html'
+  extends: [
+    'airbnb-base',
+    'plugin:jest/all',
   ],
-  // add your custom rules here
-  'rules': {
-    'arrow-parens': 0,
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    'one-var': 0,
-    'brace-style': [2, 'stroustrup', { 'allowSingleLine': true }]
-  }
-}
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  plugins: ['jest'],
+  rules: {
+    'max-classes-per-file': 'off',
+    'no-underscore-dangle': 'off',
+    'no-console': 'off',
+    'no-shadow': 'off',
+    'no-restricted-syntax': [
+      'error',
+      'LabeledStatement',
+      'WithStatement',
+    ],
+  },
+  overrides:[
+    {
+      files: ['*.js'],
+      excludedFiles: 'babel.config.js',
+    }
+  ]
+   rules:{
+        // Allow missing spaces around operators
+        space-infix-ops: off,
+        
+        // Allow multiple spaces
+        no-multi-spaces: off,
+
+        // Allow magic numbers without spacing
+        no-magic-numbers: off
+    }
+};
