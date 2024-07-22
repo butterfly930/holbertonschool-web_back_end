@@ -1,7 +1,8 @@
 module.exports = {
   env: {
-    browser: true,
-    es2021: true,
+    browser: false,
+    es6: true,
+    jest: true,
   },
   extends: [
     'airbnb-base',
@@ -33,14 +34,4 @@ module.exports = {
       excludedFiles: 'babel.config.js',
     }
   ]
-   rules:{
-        // Allow missing spaces around operators
-        space-infix-ops: off,
-        
-        // Allow multiple spaces
-        no-multi-spaces: off,
-
-        // Allow magic numbers without spacing
-        no-magic-numbers: off
-    }
 };
