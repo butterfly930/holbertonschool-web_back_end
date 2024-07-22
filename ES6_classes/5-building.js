@@ -16,5 +16,4 @@ export default class Building {
     }
     this._sqft = value;
   }
-
 }
