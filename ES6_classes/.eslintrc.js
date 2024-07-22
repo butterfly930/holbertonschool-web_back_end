@@ -1,12 +1,12 @@
 module.exports = {
   env: {
-    browser: true,
-    es2021: true,
+    browser: false,
+    es6: true,
+    jest: true,
   },
   extends: [
     'airbnb-base',
     'plugin:jest/all',
-    "eslint:recommended",
   ],
   globals: {
     Atomics: 'readonly',
@@ -26,9 +26,6 @@ module.exports = {
       'error',
       'LabeledStatement',
       'WithStatement',
-      "space-infix-ops": "off",
-      "no-multi-spaces": "off",
-      "no-magic-numbers": "off"
     ],
   },
   overrides:[
@@ -36,5 +33,5 @@ module.exports = {
       files: ['*.js'],
       excludedFiles: 'babel.config.js',
     }
-  ],
+  ]
 };
