@@ -6,6 +6,7 @@ module.exports = {
   extends: [
     'airbnb-base',
     'plugin:jest/all',
+    "eslint:recommended",
   ],
   globals: {
     Atomics: 'readonly',
@@ -25,9 +26,9 @@ module.exports = {
       'error',
       'LabeledStatement',
       'WithStatement',
-      'space-infix-ops': 'off',
-      'no-multi-spaces': 'off',
-      'no-magic-numbers': 'off'
+      "space-infix-ops": "off",
+      "no-multi-spaces": "off",
+      "no-magic-numbers": "off"
     ],
   },
   overrides:[
