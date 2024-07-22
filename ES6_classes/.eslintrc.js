@@ -26,6 +26,9 @@ module.exports = {
       'error',
       'LabeledStatement',
       'WithStatement',
+      'space-infix-ops': 'off',
+      'no-multi-spaces': 'off',
+      'no-magic-numbers': 'off'
     ],
   },
   overrides:[
@@ -34,14 +37,4 @@ module.exports = {
       excludedFiles: 'babel.config.js',
     }
   ],
-  rules: {
-        // Allow missing spaces around operators
-        "space-infix-ops": "off",
-        
-        // Allow multiple spaces
-        "no-multi-spaces": "off",
-
-        // Allow magic numbers without spacing
-        "no-magic-numbers": "off"
-    }
 };
