@@ -1,14 +1,8 @@
-export default function cleanSet(set, startString) {
-  const arr = [];
-  if (typeof startString === 'undefined' || startString === '' || typeof startString !== 'string') {
+export default function cleanSet(argSet, startString) {
+  if (startString.length === 0) {
     return '';
   }
-  set.forEach((element) => {
-    if (typeof element !== 'undefined') {
-      if (element.startsWith(startString)) {
-        arr.push(element.split(startString)[1]);
-      }
-    }
-  });
-  return arr.join('-');
+  const cleanPart = new Set([...argSet].filter((text) => text.startsWith(startString)));
+  const newStr = Array.from(cleanPart).join('-');
+  return newStr.replace(new RegExp(startString, 'g'), '');
 }
