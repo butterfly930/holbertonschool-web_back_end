@@ -1,14 +1,11 @@
-export default function cleanSet(set, startString) {
-    const arr = [];
-    if (typeof startString === 'undefined' || startString === '' || typeof startString !== 'string') {
-        return '';
+export default function updateUniqueItems(argMap) {
+    if (!(argMap instanceof Map)) {
+        throw Error('Cannot process');
     }
-    set.forEach((element) => {
-        if (typeof element !== 'undefined') {
-            if (element.startsWith(startString)) {
-                arr.push(element.split(startString)[1]);
-            }
+    argMap.forEach((value, key) => {
+        if (value === 1) {
+            argMap.set(key, 100);
         }
+        return argMap;
     });
-    return arr.join('-');
 }
