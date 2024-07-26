@@ -1,11 +1,14 @@
-export default function updateUniqueItems(argMap) {
-    if (!(argMap instanceof Map)) {
-        throw Error('Cannot process');
+export default function cleanSet(set, startString) {
+    const arr = [];
+    if (typeof startString === 'undefined' || startString === '' || typeof startString !== 'string') {
+        return '';
     }
-    argMap.forEach((value, key) => {
-        if (value === 1) {
-            argMap.set(key, 100);
+    set.forEach((element) => {
+        if (typeof element !== 'undefined') {
+            if (element.startsWith(startString)) {
+                arr.push(element.split(startString)[1]);
+            }
         }
-        return argMap;
     });
+    return arr.join('-');
 }
