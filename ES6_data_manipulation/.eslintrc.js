@@ -5,8 +5,7 @@ module.exports = {
         es2021: true
     },
     extends: [
-        'airbnb-base',
-        'plugin:jest/all',
+        "eslint:recommended"
     ],
     globals: {
         Atomics: 'readonly',
