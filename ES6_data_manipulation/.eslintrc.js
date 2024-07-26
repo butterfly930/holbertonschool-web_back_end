@@ -26,9 +26,9 @@ module.exports = {
             'error',
             'LabeledStatement',
             'WithStatement',
-            "space-infix-ops": "off",
-            "no-multi-spaces": "off",
-            "no-magic-numbers": "off"
+            'space-infix-ops': 'off',
+            'no-multi-spaces': 'off',
+            'no-magic-numbers': 'off'
         ],
     },
     overrides: [
