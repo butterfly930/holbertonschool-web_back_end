@@ -1,11 +1,12 @@
-
 module.exports = {
     env: {
-        "browser": true,
-        "es2021": true
+        browser: false,
+        es6: true,
+        jest: true,
     },
     extends: [
-            "eslint:recommended"
+        'airbnb-base',
+        'plugin:jest/all',
     ],
     globals: {
         Atomics: 'readonly',
@@ -32,16 +33,5 @@ module.exports = {
             files: ['*.js'],
             excludedFiles: 'babel.config.js',
         }
-    ],
-    "rules": {
-        // Allow missing spaces around operators
-        "space-infix-ops": "off",
-
-        // Allow multiple spaces
-        "no-multi-spaces": "off",
-
-        // Allow magic numbers without spacing
-        "no-magic-numbers": "off"
-
+    ]
 };
-}
