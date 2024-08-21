@@ -4874,7 +4874,7 @@ INSERT INTO `metal_bands` (`band_name`, `fans`, `formed`, `id`, `origin`, `split
 ('Absence Of The Sacred', '0', '2005', '4901', 'Singapore', NULL, 'Progressive death,Thrash'),
 ('Ace Of Hearts', '0', '2008', '4902', 'United Kingdom', '2008', 'Gothic,Hard rock'),
 ('Aeturnus Dominion', '0', '2003', '4903', 'Australia', NULL, 'Death'),
-('Algy Ward\s Tank', '0', '2007', '4904', 'United Kingdom', '2007', 'Heavy'),
+('Algy Ward\'s Tank', '0', '2007', '4904', 'United Kingdom', '2007', 'Heavy'),
 ('Altars Of Grief', '0', '2013', '4905', 'Canada', NULL, 'Funeral doom,Death doom,Atmospheric doom'),
 ('Anatomia', '0', '2002', '4906', 'Japan', '2002', 'Death,Doom'),
 ('Anger As Art', '0', '2004', '4907', 'USA', NULL, 'Thrash'),
